@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\aleks.karczewski\source\repos\GraphColoringGenetic\x64\Debug\GraphColoringGenetic.exe</FullPath>
+      <FullPath>C:\Users\aleks.karczewski\source\repos\GraphColoringGenetic\GraphColoringGenetic\GraphColoringGenetic\x64\Debug\GraphColoringGenetic.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

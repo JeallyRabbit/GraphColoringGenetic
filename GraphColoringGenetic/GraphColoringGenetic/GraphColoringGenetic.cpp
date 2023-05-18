@@ -3,6 +3,7 @@
 #include <ctime>
 #include <cstdlib>
 #include <algorithm>
+#include <fstream>
 
 using namespace std;
 // Definicja struktury reprezentującej graf jako macierz sąsiedztwa
@@ -22,7 +23,7 @@ struct Graph {
 
     void addEdge(int v, int w) {
         adjacencyMatrix[v][w] = true;
-        adjacencyMatrix[w][v] = true;
+        //adjacencyMatrix[w][v] = true;
     }
 };
 
@@ -130,14 +131,29 @@ Solution geneticAlgorithm(const Graph& graph, int numColors, int populationSize,
 }
 
 int main() {
+
+    fstream plik;
+    plik.open("dane.txt", ios::in);
+    int n,a,b;
+    vector <vector <int>> vertex;
+    if (!plik.good()) { cout << "cos sie wyjebalo" << endl; return 0; }
+    plik >> n;
+    Graph graph(n);
+    while (plik >> a >> b)
+    {
+        graph.addEdge(a, b);
+    }
+    
     // Przykładowy graf
-    Graph graph(5);
+    /* Graph graph(5);
     graph.addEdge(0, 1);
     graph.addEdge(0, 2);
     graph.addEdge(1, 2);
     graph.addEdge(2, 3);
-    graph.addEdge(3, 4);
-    int numColors = 3; // Liczba dostępnych kolorów
+    graph.addEdge(3, 4);*/
+    
+   
+    int numColors = 100000; // Liczba dostępnych kolorów
     int populationSize = 50; // Rozmiar populacji
     int numGenerations = 100; // Liczba generacji
 

@@ -1,3 +1,3 @@
 ﻿  GraphColoringGenetic.cpp
-C:\Users\aleks.karczewski\source\repos\GraphColoringGenetic\GraphColoringGenetic\GraphColoringGenetic.cpp(84,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  GraphColoringGenetic.vcxproj -> C:\Users\aleks.karczewski\source\repos\GraphColoringGenetic\x64\Debug\GraphColoringGenetic.exe
+C:\Users\aleks.karczewski\source\repos\GraphColoringGenetic\GraphColoringGenetic\GraphColoringGenetic\GraphColoringGenetic\GraphColoringGenetic.cpp(85,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GraphColoringGenetic.vcxproj -> C:\Users\aleks.karczewski\source\repos\GraphColoringGenetic\GraphColoringGenetic\GraphColoringGenetic\x64\Debug\GraphColoringGenetic.exe
